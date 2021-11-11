@@ -1,0 +1,41 @@
+
+<div class="container">
+  <div class="row h-50px"></div><%# banner image %>
+  <div class='row'>
+    <div class='col-1'></div>
+    <div class='col-6'>
+      <div class=''>
+        <h2><%=@flat.name%></h2>
+        <p><%=@flat.address%></p>
+      </div>
+      <div class=''>
+        <h2>A bit more about this flat:</h2>
+        <p><%=@flat.description %></p>
+      </div>
+    </div>
+    <div class='col-4'>
+      <div class=''>
+        <h3>Book this place!</h3>
+        <%# <%= simple_form_for %>
+      </div>
+      <div class=''>
+        <h3>Details</h3>
+        <ul>
+          <li> <%= @flat.number_of_guests %> </li>
+          <li> <%= @flat.price_per_night %> </li>
+        </ul>
+      </div>
+      <div class=''>
+        <h4>Share</h4>
+        <ul>
+          <li> FB </li>
+          <li> TW </li>
+          <li> PN </li>
+          <li> EM </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class='col-1'></div>
+  </div>
+</div>

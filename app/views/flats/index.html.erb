@@ -1,0 +1,20 @@
+
+
+<% @flats.each do |flat| %>
+<div>
+  <div>
+  <%# background image %>
+  </div>
+    <h2> <%= flat.name %></h2>
+    <p> <%= flat.description %></p>
+    <ul>
+      <li> <%= flat.number_of_guests %> </li>
+      <li> <%= flat.price_per_night %> </li>
+    </ul>
+  <div>
+    <div> <%= link_to "More Info", flat_path(flat) %></div>
+    <div> <%= link_to "Edit", edit_flat_path(flat) %></div>
+    <div> <%= link_to "Remove", flat_path(flat), method: :destroy, data: {confirm: "Are you sure?"} %></div>
+  </div>
+</div>
+<% end %>
